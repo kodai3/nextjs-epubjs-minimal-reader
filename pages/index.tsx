@@ -1,15 +1,16 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+// // @ts-ignore
+// import book from '../public/test.epub'
+import dynamic from 'next/dynamic'
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+const Reader = dynamic(() => import('../components/reader/Reader'), { ssr: false })
+
+const IndexPage = () => {
+
+  return (
+    <div style={{ height: '100%', width: '100%' }}>
+      <Reader url={'/economics_to_be_happier.epub'} />
+    </div>
+  )
+}
 
 export default IndexPage
