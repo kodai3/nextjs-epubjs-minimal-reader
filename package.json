@@ -18,7 +18,7 @@
     "react-window-size": "^1.2.2"
   },
   "devDependencies": {
-    "@types/node": "^12.12.21",
+    "@types/node": "^14.0.24",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
     "@types/react-window-size": "^1.2.0",
