@@ -23,7 +23,7 @@
     "@types/react-dom": "^16.9.4",
     "@types/react-window-size": "^1.2.0",
     "file-loader": "^6.0.0",
-    "typescript": "3.7.3"
+    "typescript": "3.9.7"
   },
   "license": "ISC"
 }
